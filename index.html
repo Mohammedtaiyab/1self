@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1Self</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+               <img src="assets/img/logo.png" alt="">
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#" class="active">LEARN MORE</a></li>
+                    <li><a href="#">QUEST</a></li>
+                    <li><a href="#">APPS</a></li>
+                    <li><a href="#">DEVELOPERS</a></li>
+                    <li>
+                        <div class="buttn">
+                            <button class="btn nav-btn">
+                                LOG IN
+                            </button>
+                            <button class="btn nav-btn org">
+                                SIGN UP
+                            </button>
+                        </div>
+                    </li>
+                   
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="hero-inner">
+            <h1>live smarter</h1>
+            <img src="assets/img/banenr.png" alt="">
+            <p>1selft empower you to <br><span>collect,compare,correlate and comment on</span><br>all your data to live a smarter life.</p>
+            <div class="buttons"><p>Join our invite only beta</p></div>
+                <div class="signup">
+                    <form target="#">
+                      <input type="email" id="email-signup" placeholder="Your@email.com" required>
+                      <input type="submit" value="JOIN" id="btn">
+                    </form>
+                  </div>
+       
+            
+          </div>
+    </section>
+   <section class="blocks">
+    <div class="row">
+        <div class="col-md-6 bg-currentColor">
+            <div class="block">
+                <img src="assets/img/banner.png" alt="">
+            </div>
+
+        </div>
+        <div class="col-md-6 bg-redlight">
+            <div class="block">
+              <h1>Unite all of your data</h1>
+              <h3>Yup, allof your data.<br>Well, all that you're interested in anyway.</h3>
+              <p>Made a purchase. Got a new follower. Spent time doing something. Got a new high score. Travelled somewhere. <br>
+                Everything you do is being documented in data by the apps. websites and devices you use and by the world around you.  <br>
+                For the first time, you can bring all of this data together in order to help you live a smarter life </p>
+            </div>
+
+        </div>
+        <div class="col-md-6 bg-green">
+            <div class="block">
+                <h1>We can't build it </h1>
+                <h3>That's right, we can't build it. <br> At least not on our own.</h3>
+                <p>We are building a flexible platform to allow you to store and combine your data.  <br>
+                    We are building super simple tools to allow developers to integrate their apps with iself.  <br>
+                    We are building a community who can find the interesting connections in the data and bubble it up for all of our benefit. </p>
+              </div>
+        </div>
+        <div class="col-md-6">
+            <div class="block">
+                <img src="assets/img/banner2.png" alt="">
+            </div>
+        </div>
+    </div>
+   </section>
+<section>
+    <div id="carousel1" class="carousel slide testimonial-style" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel1" data-slide-to="1"></li>
+          <li data-target="#carousel1" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="carousel-caption testimonial-caption-style">
+                <h1>Mission</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
+          
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption testimonial-caption-style">
+                <h1>Vision</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
+             
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption testimonial-caption-style">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
+             
+            </div>
+          </div>
+        </div>
+    
+        <!-- Controls -->
+    
+        <a class="left carousel-control" href="#carousel1" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+        <a class="right carousel-control" href="#carousel1" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+      </div>
+</section>
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    
+
+
+
+
+
+
+
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
